@@ -1,0 +1,14 @@
+'TechDivision.Jobs:JobList':
+  superTypes:
+    'TechDivision.Card.Decks:DeckMixin': true
+  ui:
+    inspector:
+      tabs:
+        jobListSettings: []
+      groups:
+        jobListSettings: []
+  properties:
+    hideJobPostingDescription: []
+    hideJobPostingEmploymentType: []
+    hideJobPostingPosition: []
+    hideJobPostingLocation: []

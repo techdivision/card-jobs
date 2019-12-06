@@ -1,0 +1,14 @@
+{
+    "name": "techdivision/card-jobs",
+    "type": "neos-plugin",
+    "description": "Fully featured job cards based on techdivision/card and techdivision/jobs",
+    "require": {
+        "techdivision/jobs" : "^1.0.0",
+        "techdivision/card-shuffle": "^1.0.0"
+    },
+    "extra": {
+        "neos": {
+            "package-key": "TechDivision.Card.Jobs"
+        }
+    }
+}

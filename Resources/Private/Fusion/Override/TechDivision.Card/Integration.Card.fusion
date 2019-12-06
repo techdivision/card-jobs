@@ -1,0 +1,30 @@
+prototype(TechDivision.Card:Integration.Card) {
+
+    supportingText >
+    supportingText = Neos.Fusion:Case {
+        cardSupportingText {
+            condition = ${q(node).property('cardSupportingText')}
+            renderer = ${q(node).property('cardSupportingText')}
+            @position = 'start'
+        }
+        fallbackJobDescription {
+            @position = 'after cardSupportingText'
+            condition = ${q(node).property('jobPostingDescription')}
+            renderer = ${q(node).property('jobPostingDescription')}
+        }
+    }
+
+    secondaryText >
+    secondaryText = Neos.Fusion:Case {
+        cardSecondaryText {
+            condition = ${q(node).property('cardSecondaryText')}
+            renderer = ${q(node).property('cardSecondaryText')}
+            @position = 'start'
+        }
+        fallbackJobPosition {
+            @position = 'after cardSecondaryText'
+            condition = ${q(node).property('jobPostingPosition')}
+            renderer = ${q(node).property('jobPostingPosition')}
+        }
+    }
+}

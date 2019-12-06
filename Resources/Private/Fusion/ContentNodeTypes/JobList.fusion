@@ -1,0 +1,22 @@
+prototype(TechDivision.Jobs:JobList) >
+prototype(TechDivision.Jobs:JobList) < prototype(Neos.Fusion:Component) {
+
+    jobPostingRenderer = TechDivision.Card.Decks:NodeTypes {
+        @context.nodeTypes = ${['TechDivision.Jobs:Document.JobPosting']}
+    }
+
+    renderer = afx`
+        {props.jobPostingRenderer}
+    `
+
+    @cache {
+        mode = 'cached'
+        entryIdentifier {
+            node = ${node}
+        }
+        entryTags {
+            1 = ${Neos.Caching.nodeTag(node)}
+            2 = ${Neos.Caching.descendantOfTag(allAvailableJobPostings)}
+        }
+    }
+}

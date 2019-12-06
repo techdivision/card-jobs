@@ -1,0 +1,3 @@
+'TechDivision.Jobs:Document.JobPosting':
+  superTypes:
+    'TechDivision.Card:CardMixin': true
