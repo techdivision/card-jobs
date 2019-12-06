@@ -15,5 +15,9 @@ Available Card Packages
 > - are using TechDivision.Card and want to apply Card style to your job lists
 > - want an out-of-the-box solution that integrates Jobs with Cards
 
+### Installation
+
+TechDivision.Card.Jobs is available via packagist. Add `"techdivision/card-jobs" : "~1.0"` to the require section of the composer.json or run `composer require techdivision/card-jobs`.  
+
 ### Info
 This package will install `techdivision/card-shuffle` which in turn installs other third-party packages like `sitegeist/taxonomy`  
